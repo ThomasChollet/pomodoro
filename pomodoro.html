@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +7,21 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <div class="timer">
-        <h1 id="timer-display">00:00</h1>
-        <button id="start-btn">Start</button>
-        <button id="stop-btn">Stop</button>
+    <div class="pomodoro-container">
+        <h1>Pomodoro Timer</h1>
+        <div class="timer">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <div class="controls">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="session-selector">
+            <button id="short-session">25/5 min</button>
+            <button id="long-session">50/10 min</button>
+        </div>
     </div>
-
-    <script src="script.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
